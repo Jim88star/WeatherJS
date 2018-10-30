@@ -1,10 +1,6 @@
 class Weather {
   constructor(zip) {
     this.apiKey = "4d2996605aacb6960a95f294a02ed197";
-    // this.city = city;
-    // this.state = state;
-    // this.latitude = latitude;
-    // this.longitude = longitude;
     this.zip = zip;
   }
 
@@ -14,7 +10,7 @@ class Weather {
 
     const responseData = await response.json();
 
-    return responseData.name;
+    return responseData;
     // return responseData.main.temp;
   }
 
